@@ -149,7 +149,7 @@ function dk_speakup_emailpetition_shortcode( $attr ) {
 							</div>';
 				} else {
 					$petition_form .= '
-							<div class="dk-speakup-full dk-speakup-message ' . $height . '" id="dk-speakup-message-' . $petition->id . '">
+							<div class="dk-speakup-full dk-speakup-message" ' . $height . ' id="dk-speakup-message-' . $petition->id . '">
 								<p class="dk-speakup-greeting">' . $petition->greeting . '</p>
 								' . stripslashes( wpautop( $petition->petition_message ) ) . '
 								<p class="dk-speakup-caps">[' . __( 'signature', 'dk-speakup' ) . ']</p>

@@ -3,6 +3,15 @@ jQuery( document ).ready( function( $ ) {
 
 /* Add New page
 ------------------------------------------------------------------- */
+	$( 'input#requires_confirmation' ).change( function () {
+		if ( $( this ).attr( 'checked' ) ) {
+			$( 'div.dk-speakup-returnurl' ).slideDown();
+			$( '#dk-speakup input#return_url' ).focus();
+		} else {
+			$( 'div.dk-speakup-returnurl' ).slideUp();
+		}
+	});
+
 	// open or close signature goal settings
 	$( 'input#has_goal' ).change( function () {
 		if ( $( this ).attr( 'checked' ) ) {

@@ -120,6 +120,10 @@
 								<input type="checkbox" name="requires_confirmation" id="requires_confirmation" <?php if ( $petition->requires_confirmation == 1 ) echo 'checked="checked"'; ?> />
 								<label for="requires_confirmation" class="dk-speakup-inline"><?php _e( 'Confirm signatures', 'dk_speakup'); ?></label>
 							</div>
+							<div class="dk-speakup-returnurl dk-speakup-subsection <?php if ( $petition->requires_confirmation != 1 ) echo 'dk-speakup-hidden'; ?>">
+								<label for="return_url"><?php _e( 'Return URL', 'dk_speakup'); ?>:</label>
+								<input id="return_url" name="return_url" value="<?php echo esc_attr( $petition->return_url ); ?>" size="30" maxlength="200" type="text" />
+							</div>
 						</div>
 
 						<!-- Editable -->
