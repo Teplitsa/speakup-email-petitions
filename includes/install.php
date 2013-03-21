@@ -23,6 +23,7 @@ function dk_speakup_install() {
 			`sends_email` CHAR(1) BINARY NOT NULL,
 			`twitter_message` VARCHAR(120) CHARACTER SET utf8 NOT NULL,
 			`requires_confirmation` CHAR(1) BINARY NOT NULL,
+			`return_url` VARCHAR(200) CHARACTER SET utf8 NOT NULL,
 			`displays_custom_field` CHAR(1) BINARY NOT NULL,
 			`custom_field_label` VARCHAR(200) CHARACTER SET utf8 NOT NULL,
 			`displays_optin` CHAR(1) BINARY NOT NULL,

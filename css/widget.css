@@ -389,16 +389,16 @@ a.dk-speakup-widget-facebook:active {
 /* Form validation
 ----------------------------------*/
 .dk-speakup-widget-response {
-  background-color: #cccccc;
-  border-radius: 4px;
-  display: none;
-  padding: 1em 5%;
-  border: 1px solid #b3b3b3 !important;
-  width: 279px;
-  margin-top: 1em;
-  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color: #cccccc;
+  border: 1px solid #b3b3b3 !important;
+  border-radius: 4px;
   box-sizing: border-box;
+  display: none;
+  margin-top: 1em;
+  padding: 1em 5%;
+  width: 279px;
 }
 .dk-speakup-widget-response-error {
   background-color: #ffebe8;

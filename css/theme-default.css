@@ -160,6 +160,7 @@
 .dk-speakup-petition .dk-speakup-message,
 .dk-speakup-petition .dk-speakup-message-editable {
   display: none !important;
+  overflow: auto;
 }
 .dk-speakup-petition input[type=text] {
   border: 1px solid #b3b3b3;

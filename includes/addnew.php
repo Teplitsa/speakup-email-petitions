@@ -89,6 +89,12 @@ function dk_speakup_addnew_page() {
 			$message_update = '';
 			$petition->optin_label = __( 'Add me to your mailing list', 'dk_speakup' );
 	}
+
+	if ( $petition->return_url == '' ) {
+		$petition->return_url = home_url();
+		error_log($petition->return_url);
+	}
+
 	// display the form
 	include_once( 'addnew.view.php' );
 }

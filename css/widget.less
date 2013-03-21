@@ -288,7 +288,7 @@ textarea.dk-speakup-widget-message:focus {
 		color : darken( @errorcolor, 50% );
 	}
 	input[type=text]:focus {
-		background-color: #ffc;
+		background-color : #ffc;
 	}
 	input[type=text] {
 		-moz-box-sizing    : border-box;
@@ -304,7 +304,7 @@ textarea.dk-speakup-widget-message:focus {
 		padding            : 0 0 0 .5em;
 	}
 	.dk-speakup-widget-optin-wrap {
-		margin-top: .2em;
+		margin-top : .2em;
 	}
 	.dk-speakup-widget-optin-wrap label {
 		display        : inline-block;
@@ -426,20 +426,20 @@ a.dk-speakup-widget-facebook:active {
 ----------------------------------*/
 // ajax response message
 .dk-speakup-widget-response {
-	background-color : @basecolor;
-	border-radius    : @radius;
-	display          : none;
-	padding          : 1em @sidepadding;
-	border           : 1px solid darken( @basecolor, 10% ) !important;
-	width : 279px;
-	margin-top: 1em;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
+	-moz-box-sizing    : border-box;
+	-webkit-box-sizing : border-box;
+	background-color   : @basecolor;
+	border             : 1px solid darken( @basecolor, 10% ) !important;
+	border-radius      : @radius;
+	box-sizing         : border-box;
+	display            : none;
+	margin-top         : 1em;
+	padding            : 1em @sidepadding;
+	width              : 279px;
 }
 .dk-speakup-widget-response-error {
 	background-color : @errorcolor;
-	border-color    : darken( @errorcolor, 25% ) !important;
+	border-color     : darken( @errorcolor, 25% ) !important;
 }
 .dk-speakup-widget-response-success {
 	background-color : @successcolor;
@@ -463,6 +463,6 @@ a.dk-speakup-widget-facebook:active {
 */
 @media only screen and ( max-device-width: 480px ) {
 	.dk-speakup-widget-popup-wrap {
-		position: absolute;
+		position : absolute;
 	}
 }
